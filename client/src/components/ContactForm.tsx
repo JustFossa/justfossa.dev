@@ -1,5 +1,6 @@
 import {IoSend} from 'react-icons/io5'
 import { useState } from 'react'
+import axios from 'axios'
 
 const emailRegex = new RegExp(
     /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
@@ -14,6 +15,22 @@ export const ContactForm = () => {
         e.preventDefault()
         if(!email || !message) return setError("Please fill out all fields")
         if(!emailRegex.test(email)) return setError("Hmm, that doesn't look like an email.")
+        try {
+            axios.post(import.meta.env.VITE_WEBHOOK_URL, {
+                username: "JustFossa Contact Form",
+                icon_url: "https://justfossa.dev/favicon.ico",
+                embeds: [
+                    {
+                        title: "New Contact Form Submission",
+                        description: `**Email:** \`${email}\`\n**Message:** \`${message}\``,
+                        color: 0x5865f2
+                    }
+                ]
+            })
+        } catch (error) {
+            setError("Something went wrong, please try again later.")
+        }
+
     }
 
     return (

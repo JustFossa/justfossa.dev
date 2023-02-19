@@ -37,7 +37,7 @@ export const ContactItem = ({
                     transform: props.xys.to(trans)
                 }}
                 href={link}
-                className={`w-full h-[4rem] dark:bg-white/5 border-[1px] dark:text-gray-400 dark:border-slate-700/20  rounded-lg flex flex-row items-center justify-start p-4 gap-2 ${borderColor} transition-colors ease-in-out duration-200 cursor-pointer`}
+                className={`w-full h-[4rem] dark:bg-white/5 border-[1px] dark:text-gray-400 border-slate-700/20 ${borderColor} dark:border-[1px] rounded-lg flex flex-row items-center justify-start p-4 gap-2 transition-colors ease-in-out duration-200 cursor-pointer`}
             >
                 {icon}
                 <h1 className="text-sm font-semibold">{name}</h1>

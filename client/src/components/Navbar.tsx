@@ -46,6 +46,14 @@ const ThemeSwitcher = ({handleTheme, theme}: any) => {
     )
 }
 
+const MobileThemeSwitcher = ({handleTheme, theme}: any) => {
+    return (
+        <div onClick={handleTheme} className="flex flex-row items-center justify-center ml-2">
+            {theme ? <FiMoon size={30} className="p-2 w-10 h-10 rounded-md font-bold dark:text-white cursor-pointer"  /> : <FiSun className="p-2 w-9 h-9 rounded-md font-bold dark:text-white cursor-pointer"  />}
+        </div>
+        )
+}
+
 export const Navbar = ({selected = "Home"}: {selected: string}) => {
     const [open, setOpen] = useState<boolean>(false)
     const [theme, setTheme] = useState<boolean>(false)
@@ -81,12 +89,13 @@ export const Navbar = ({selected = "Home"}: {selected: string}) => {
                     <NavItem title="Contact" isSelected={selected == "Contact"} href="/contact" />
                 </div>
                 <div className="flex flex-row items-center justify-end">
-                    <LinkButton title="GitHub" Icon={SiGithub} href="/" />
-                    <LinkButton title="Twitter" Icon={SiTwitter} href="/" />
+                    <LinkButton title="GitHub" Icon={SiGithub} href="https://github.com/JustFossa" />
+                    <LinkButton title="Twitter" Icon={SiTwitter} href="httpa://twitter.com/Just_Fossa" />
                     <LinkButton title="Email" Icon={IoMailOutline} href="mailto:hello@justfossa.dev" />
                 </div>
             </div>
-            <div className="hidden sm:flex fixed w-full h-[65px] justify-center flex-col z-[555] dark:border-b-slate-800/50 border-b-[1px] backdrop-blur-md dark:bg-[#12181d]/60">
+            <div className="hidden sm:flex fixed w-full h-[65px] flex-row items-center justify-between z-[555] dark:border-b-slate-800/50 border-b-[1px] backdrop-blur-md dark:bg-[#12181d]/60">
+                <MobileThemeSwitcher handleTheme={handleThemeChange} theme={theme} />
                 {open ? <RxCross2 size={30} className="ml-auto mr-6 cursor-pointer dark:text-white"  onClick={() => setOpen(!open)} />  : <AiOutlineMenu size={30} className="ml-auto mr-6 cursor-pointer dark:text-white"  onClick={() => setOpen(!open)} />}
                 {
                     open && (
@@ -94,9 +103,9 @@ export const Navbar = ({selected = "Home"}: {selected: string}) => {
                             <MobileNavItem title="Home" isSelected={selected == "Home"} href="/" />
                             <MobileNavItem title="Contact" isSelected={selected == "Contact"} href="/contact" />
                             <div className="flex flex-row justify-center p-4 items-center w-full col-span-2 bg-white border-gray-400 dark:border-none border-b-[1px] dark:bg-[#090c0f]">
-                                <LinkButton title="GitHub" Icon={SiGithub} href="/" />
-                                <LinkButton title="Twitter" Icon={SiTwitter} href="/" />
-                                <LinkButton title="Email" Icon={IoMailOutline} href="/" />
+                                <LinkButton title="GitHub" Icon={SiGithub} href="https://github.com/JustFossa" />
+                                <LinkButton title="Twitter" Icon={SiTwitter} href="https://twitter.com/Just_Fossa" />
+                                <LinkButton title="Email" Icon={IoMailOutline} href="mailto:hello@justfossa.dev" />
                             </div>
                         </div>
                     )
