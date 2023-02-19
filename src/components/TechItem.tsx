@@ -1,6 +1,5 @@
 import Tippy from "@tippyjs/react";
 import { IconType } from "react-icons";
-import { tippy } from "@tippyjs/react";
 import 'tippy.js/dist/tippy.css';
 import 'tippy.js/animations/perspective.css'
 

@@ -1,6 +1,5 @@
 import { ReactElement } from "react";
 import { IconType } from "react-icons";
-import { Link } from "react-router-dom";
 import {animated, useSpring} from "react-spring";
 import {FiExternalLink} from "react-icons/fi";
 

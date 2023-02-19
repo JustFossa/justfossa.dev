@@ -9,6 +9,7 @@ import {RxCross2} from 'react-icons/rx'
 import {FiMoon, FiSun} from 'react-icons/fi'
 import 'tippy.js/dist/tippy.css';
 import 'tippy.js/animations/perspective.css'
+import { useRouter } from 'next/router';
 
 const NavItem = ({ title, href, isSelected }: { title: string; href: string, isSelected: boolean }) => {
     return (
@@ -40,7 +41,7 @@ const MobileNavItem = ({ title, href, isSelected }: { title: string; href: strin
 
 const ThemeSwitcher = ({handleTheme, theme}: any) => {
     return (
-        <div onClick={handleTheme} className="flex flex-row items-center justify-center">
+        <div onClick={handleTheme} className="flex flex-row items-center justify-center cursor-pointer">
             {theme ? <FiMoon size={20} className="p-2 w-9 h-9 rounded-md font-bold dark:text-white hover:bg-slate-500/10 dark:hover:bg-[#c8c8dc]/5"  /> : <FiSun className="p-2 w-9 h-9 rounded-md font-bold dark:text-white hover:bg-slate-500/10 dark:hover:bg-[#c8c8dc]/5 "  />}
         </div>
     )
@@ -48,15 +49,16 @@ const ThemeSwitcher = ({handleTheme, theme}: any) => {
 
 const MobileThemeSwitcher = ({handleTheme, theme}: any) => {
     return (
-        <div onClick={handleTheme} className="flex flex-row items-center justify-center ml-2">
+        <div onClick={handleTheme} className="flex flex-row items-center justify-center ml-2 cursor-pointer">
             {theme ? <FiMoon size={30} className="p-2 w-10 h-10 rounded-md font-bold dark:text-white cursor-pointer"  /> : <FiSun className="p-2 w-9 h-9 rounded-md font-bold dark:text-white cursor-pointer"  />}
         </div>
         )
 }
 
-export const Navbar = ({selected = "Home"}: {selected: string}) => {
+export const Navbar = () => {
     const [open, setOpen] = useState<boolean>(false)
     const [theme, setTheme] = useState<boolean>(false)
+    const router = useRouter()
 
     useEffect(() => {
         const theme = localStorage.getItem('theme')
@@ -85,8 +87,8 @@ export const Navbar = ({selected = "Home"}: {selected: string}) => {
             <div className="sm:hidden fixed flex md:w-[49rem] w-[90%] z-[555] h-[55px] items-center justify-between flex-row border-gray-400 dark:border-slate-800/50 border-[1px] mt-6 rounded-md backdrop-blur-lg dark:bg-[#12181d]/60">
                 <div className="flex flex-row items-center gap-[5%] justify-start p-2">
                     <ThemeSwitcher handleTheme={handleThemeChange} theme={theme} />
-                    <NavItem title="Home" isSelected={selected == "Home"} href="/" />
-                    <NavItem title="Contact" isSelected={selected == "Contact"} href="/contact" />
+                    <NavItem title="Home"  isSelected={router.pathname == "/"} href="/" />
+                    <NavItem title="Contact" isSelected={router.pathname == "/contact"} href="/contact" />
                 </div>
                 <div className="flex flex-row items-center justify-end">
                     <LinkButton title="GitHub" Icon={SiGithub} href="https://github.com/JustFossa" />
@@ -100,8 +102,8 @@ export const Navbar = ({selected = "Home"}: {selected: string}) => {
                 {
                     open && (
                         <div className="fixed grid-cols-2 grid mt-[170px] w-full transition-all">
-                            <MobileNavItem title="Home" isSelected={selected == "Home"} href="/" />
-                            <MobileNavItem title="Contact" isSelected={selected == "Contact"} href="/contact" />
+                            <MobileNavItem title="Home"  isSelected={router.pathname == "/"} href="/" />
+                            <MobileNavItem title="Contact" isSelected={router.pathname == "/contact"} href="/contact" />
                             <div className="flex flex-row justify-center p-4 items-center w-full col-span-2 bg-white border-gray-400 dark:border-none border-b-[1px] dark:bg-[#090c0f]">
                                 <LinkButton title="GitHub" Icon={SiGithub} href="https://github.com/JustFossa" />
                                 <LinkButton title="Twitter" Icon={SiTwitter} href="https://twitter.com/Just_Fossa" />

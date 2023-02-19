@@ -1,6 +1,0 @@
-export {Navbar} from './Navbar'
-export {TechItem} from './TechItem'
-export {RepoCard} from './RepoCard'
-export {Footer} from './Footer'
-export {ContactItem} from './ContactItem'
-export {ContactForm} from './ContactForm'
