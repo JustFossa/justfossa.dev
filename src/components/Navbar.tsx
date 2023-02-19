@@ -9,22 +9,23 @@ import {RxCross2} from 'react-icons/rx'
 import {FiMoon, FiSun} from 'react-icons/fi'
 import 'tippy.js/dist/tippy.css';
 import 'tippy.js/animations/perspective.css'
-import { useRouter } from 'next/router';
+import { useRouter} from 'next/router';
+import Link from 'next/link'
 
 const NavItem = ({ title, href, isSelected }: { title: string; href: string, isSelected: boolean }) => {
     return (
-            <a href={href} className="dark:text-[#fff]">
+            <Link href={href} className="dark:text-[#fff]">
                 <h1 className={isSelected ? "dark:bg-[#c8c8dc]/10 px-[12px] py-[8px] rounded-md bg-slate-500/20 text-sm" : " bg-transparent hover:bg-slate-500/10 dark:hover:bg-[#c8c8dc]/5 transition-all duration-300 text-sm ease-in-out px-[12px] py-[8px] rounded-md"}>{title}</h1>
-            </a>
+            </Link>
     )
 }
 
 const LinkButton = ({ title, Icon, href, onClick }: any) => {
     return (
         <Tippy className="dark:bg-slate-900/70 p-1 mr-[10px]" arrow={false} theme='custom' content={title} placement={"bottom"} duration={300} animation={"perspective"}>
-            <a rel="noreferrer" target="_blank" href={href}>
+            <Link rel="noreferrer" target="_blank" href={href}>
                 <Icon size={26} onClick={onClick} className="mr-[10px] font-bold dark:text-white"  />
-            </a>
+            </Link>
         </Tippy>
     );
 };
@@ -32,9 +33,9 @@ const LinkButton = ({ title, Icon, href, onClick }: any) => {
 const MobileNavItem = ({ title, href, isSelected }: { title: string; href: string, isSelected: boolean }) => {
     return (
         <div>
-            <a href={href} className="dark:text-[#fff] w-[50%]">
+            <Link href={href} className="dark:text-[#fff] w-[50%]">
                 <h1 className={`${isSelected ? "dark:bg-[#1c1f23] bg-gray-400/30" : " dark:bg-[#090c0f]  bg-white"} border-[1px] border-gray-300/50 dark:border-slate-800/50 text-center p-3 w-full transition-all duration-300 ease-in-out`}>{title}</h1>
-            </a>
+            </Link>
         </div>
     )
 }
