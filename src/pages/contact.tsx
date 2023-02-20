@@ -41,7 +41,7 @@ const Contact = () => {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.95 }}
                 transition={{ ease: "easeOut", duration: 0.5 }}
-                className="flex flex-col items-center justify-start mt-[130px] overflow--hidden">
+                className="flex flex-col items-center justify-start mt-24 overflow-hidden">
                 <div>
                     <h1 className="text-3xl dark:text-white font-bold mb-4 mt-16">Let&apos;s Chat 💬</h1>
                     <p className="text dark:text-gray-300 font-light tracking-wide">Have an inquiry, or want to connect? Feel free to leave a message below, or get in touch via Discord, Twitter, or email.</p>

@@ -30,7 +30,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="h-full w-full dark:bg-gradient-to-b dark:from-[#000000] dark:to-[#040a11] flex flex-col items-center">
+        <div className="min-h-screen w-full dark:bg-gradient-to-b dark:from-[#000000] dark:to-[#040a11] flex flex-col items-center">
         <Navbar />
           <div className="w-[80%] md:w-[45rem]">
             <AnimatePresence mode="wait">

@@ -14,7 +14,8 @@ import {
   SiArduino,
   SiExpress,
   SiPostman,
-  SiChartdotjs
+  SiChartdotjs,
+  SiNextdotjs
 } from "react-icons/si"
 import { TechItem } from '@/components/TechItem'
 import {Repo, RepoCard} from '@/components/RepoCard'
@@ -47,6 +48,7 @@ export default function Home({stats, repos}: any) {
                 <div className="flex flex-wrap justify-center p-2 flex-row dark:border-slate-800/50 dark:bg-slate-900/5 border-[1px] rounded-md h-auto items-center">
                     <TechItem Icon={SiTypescript} title="Typescript" />
                     <TechItem Icon={SiReact} title="React" />
+                    <TechItem Icon={SiNextdotjs} title="Next.js" />
                     <TechItem Icon={SiVisualstudiocode} title="VS Code" />
                     <TechItem Icon={SiJavascript} title="Javascript" />
                     <TechItem Icon={SiNodedotjs} title="Node.js" />
@@ -58,7 +60,6 @@ export default function Home({stats, repos}: any) {
                     <TechItem Icon={SiGit} title="Git" />
                     <TechItem Icon={SiArduino} title="Arduino" />
                     <TechItem Icon={SiExpress} title="Express.js" />
-                    <TechItem Icon={SiPostman} title="Postman" />
                     <TechItem Icon={SiChartdotjs} title="Chart.js" />
                 </div>
                 <div>
