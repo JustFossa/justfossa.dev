@@ -1,379 +1,74 @@
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
 (() => {
 var exports = {};
-exports.id = 405;
-exports.ids = [405];
+exports.id = "pages/index";
+exports.ids = ["pages/index"];
 exports.modules = {
 
-/***/ 1171:
+/***/ "./src/components/RepoCard.tsx":
+/*!*************************************!*\
+  !*** ./src/components/RepoCard.tsx ***!
+  \*************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "W": () => (/* binding */ RepoCard)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6197);
-/* harmony import */ var react_icons_bi__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6652);
-/* harmony import */ var react_icons_bi__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_icons_bi__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_icons_ai__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(9847);
-/* harmony import */ var react_icons_ai__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_icons_ai__WEBPACK_IMPORTED_MODULE_3__);
-var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([framer_motion__WEBPACK_IMPORTED_MODULE_1__]);
-framer_motion__WEBPACK_IMPORTED_MODULE_1__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
-
-
-
-
-const langs = {
-    "JavaScript": {
-        color: "#f0db4f"
-    },
-    "TypeScript": {
-        color: "#3178c6"
-    },
-    "HTML": {
-        color: "#e34c26"
-    },
-    "unknown": {
-        color: "#000000"
-    }
-};
-const RepoCard = ({ repo  })=>{
-    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-        href: repo.html_url,
-        target: "_blank",
-        rel: "noreferrer",
-        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-            className: "w-full h-[10rem] dark:bg-slate-900/5 border-[1px] dark:border-slate-700/20 rounded-lg flex flex-col items-left p-4 gap-2 dark:hover:border-slate-700/90 cursor-pointer",
-            children: [
-                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h1", {
-                    className: "font-bold dark:text-white",
-                    children: repo.name
-                }),
-                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                    className: "dark:text-gray-300 text-sm text-gray-400",
-                    children: repo.description
-                }),
-                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                    className: "flex flex-row items-center gap-4 mt-auto text-sm dark:text-gray-300",
-                    children: [
-                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                            className: "flex items-center",
-                            children: [
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(framer_motion__WEBPACK_IMPORTED_MODULE_1__.motion.div, {
-                                    className: "w-3 h-3 rounded-full mr-2",
-                                    style: {
-                                        background: langs[repo.language ? repo.language : "unknown"].color,
-                                        border: `solid 3px ${langs[repo.language ? repo.language : "unknown"].color}`
-                                    }
-                                }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h1", {
-                                    className: "dark:text-gray-300",
-                                    children: repo.language || "Unknown"
-                                })
-                            ]
-                        }),
-                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                            className: "flex items-center justify-center",
-                            children: [
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_ai__WEBPACK_IMPORTED_MODULE_3__.AiOutlineStar, {
-                                    className: "dark:text-gray-300 mr-1 w-4 h-4"
-                                }),
-                                " ",
-                                repo.stargazers_count
-                            ]
-                        }),
-                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                            className: "flex items-center justify-center",
-                            children: [
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_bi__WEBPACK_IMPORTED_MODULE_2__.BiGitRepoForked, {
-                                    className: "dark:text-gray-300 mr-1 w-4 h-4"
-                                }),
-                                " ",
-                                repo.forks_count
-                            ]
-                        })
-                    ]
-                })
-            ]
-        })
-    });
-};
-
-__webpack_async_result__();
-} catch(e) { __webpack_async_result__(e); } });
+eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"RepoCard\": () => (/* binding */ RepoCard)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! framer-motion */ \"framer-motion\");\n/* harmony import */ var react_icons_bi__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-icons/bi */ \"react-icons/bi\");\n/* harmony import */ var react_icons_bi__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_icons_bi__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var react_icons_ai__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-icons/ai */ \"react-icons/ai\");\n/* harmony import */ var react_icons_ai__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_icons_ai__WEBPACK_IMPORTED_MODULE_3__);\nvar __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([framer_motion__WEBPACK_IMPORTED_MODULE_1__]);\nframer_motion__WEBPACK_IMPORTED_MODULE_1__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];\n\n\n\n\nconst langs = {\n    \"JavaScript\": {\n        color: \"#f0db4f\"\n    },\n    \"TypeScript\": {\n        color: \"#3178c6\"\n    },\n    \"HTML\": {\n        color: \"#e34c26\"\n    },\n    \"unknown\": {\n        color: \"#000000\"\n    }\n};\nconst RepoCard = ({ repo  })=>{\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"a\", {\n        href: repo.html_url,\n        target: \"_blank\",\n        rel: \"noreferrer\",\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n            className: \"w-full h-[10rem] dark:bg-slate-900/5 border-[1px] dark:border-slate-700/20 rounded-lg flex flex-col items-left p-4 gap-2 dark:hover:border-slate-700/90 cursor-pointer\",\n            children: [\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h1\", {\n                    className: \"font-bold dark:text-white\",\n                    children: repo.name\n                }, void 0, false, {\n                    fileName: \"/home/justfossa/coding/portfolio/src/components/RepoCard.tsx\",\n                    lineNumber: 42,\n                    columnNumber: 17\n                }, undefined),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                    className: \"dark:text-gray-300 text-sm text-gray-400\",\n                    children: repo.description\n                }, void 0, false, {\n                    fileName: \"/home/justfossa/coding/portfolio/src/components/RepoCard.tsx\",\n                    lineNumber: 43,\n                    columnNumber: 17\n                }, undefined),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                    className: \"flex flex-row items-center gap-4 mt-auto text-sm dark:text-gray-300\",\n                    children: [\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                            className: \"flex items-center\",\n                            children: [\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(framer_motion__WEBPACK_IMPORTED_MODULE_1__.motion.div, {\n                                    className: \"w-3 h-3 rounded-full mr-2\",\n                                    style: {\n                                        background: langs[repo.language ? repo.language : \"unknown\"].color,\n                                        border: `solid 3px ${langs[repo.language ? repo.language : \"unknown\"].color}`\n                                    }\n                                }, void 0, false, {\n                                    fileName: \"/home/justfossa/coding/portfolio/src/components/RepoCard.tsx\",\n                                    lineNumber: 46,\n                                    columnNumber: 29\n                                }, undefined),\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h1\", {\n                                    className: \"dark:text-gray-300\",\n                                    children: repo.language || \"Unknown\"\n                                }, void 0, false, {\n                                    fileName: \"/home/justfossa/coding/portfolio/src/components/RepoCard.tsx\",\n                                    lineNumber: 50,\n                                    columnNumber: 29\n                                }, undefined)\n                            ]\n                        }, void 0, true, {\n                            fileName: \"/home/justfossa/coding/portfolio/src/components/RepoCard.tsx\",\n                            lineNumber: 45,\n                            columnNumber: 21\n                        }, undefined),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                            className: \"flex items-center justify-center\",\n                            children: [\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_icons_ai__WEBPACK_IMPORTED_MODULE_3__.AiOutlineStar, {\n                                    className: \"dark:text-gray-300 mr-1 w-4 h-4\"\n                                }, void 0, false, {\n                                    fileName: \"/home/justfossa/coding/portfolio/src/components/RepoCard.tsx\",\n                                    lineNumber: 53,\n                                    columnNumber: 25\n                                }, undefined),\n                                \" \",\n                                repo.stargazers_count\n                            ]\n                        }, void 0, true, {\n                            fileName: \"/home/justfossa/coding/portfolio/src/components/RepoCard.tsx\",\n                            lineNumber: 52,\n                            columnNumber: 21\n                        }, undefined),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                            className: \"flex items-center justify-center\",\n                            children: [\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_icons_bi__WEBPACK_IMPORTED_MODULE_2__.BiGitRepoForked, {\n                                    className: \"dark:text-gray-300 mr-1 w-4 h-4\"\n                                }, void 0, false, {\n                                    fileName: \"/home/justfossa/coding/portfolio/src/components/RepoCard.tsx\",\n                                    lineNumber: 56,\n                                    columnNumber: 25\n                                }, undefined),\n                                \" \",\n                                repo.forks_count\n                            ]\n                        }, void 0, true, {\n                            fileName: \"/home/justfossa/coding/portfolio/src/components/RepoCard.tsx\",\n                            lineNumber: 55,\n                            columnNumber: 21\n                        }, undefined)\n                    ]\n                }, void 0, true, {\n                    fileName: \"/home/justfossa/coding/portfolio/src/components/RepoCard.tsx\",\n                    lineNumber: 44,\n                    columnNumber: 17\n                }, undefined)\n            ]\n        }, void 0, true, {\n            fileName: \"/home/justfossa/coding/portfolio/src/components/RepoCard.tsx\",\n            lineNumber: 41,\n            columnNumber: 13\n        }, undefined)\n    }, void 0, false, {\n        fileName: \"/home/justfossa/coding/portfolio/src/components/RepoCard.tsx\",\n        lineNumber: 40,\n        columnNumber: 9\n    }, undefined);\n};\n\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvY29tcG9uZW50cy9SZXBvQ2FyZC50c3guanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7O0FBRXNDO0FBQ1E7QUFDRjtBQVM1QyxNQUFNRyxRQUFRO0lBQ1YsY0FBYztRQUNWQyxPQUFPO0lBQ1g7SUFDQSxjQUFjO1FBQ1ZBLE9BQU87SUFDWDtJQUNBLFFBQVE7UUFDSkEsT0FBTztJQUNYO0lBQ0EsV0FBVztRQUNQQSxPQUFPO0lBQ1g7QUFDSjtBQVdPLE1BQU1DLFdBQVcsQ0FBQyxFQUFFQyxLQUFJLEVBQWtCLEdBQUs7SUFDbEQscUJBQ0ksOERBQUNDO1FBQUVDLE1BQU1GLEtBQUtHLFFBQVE7UUFBRUMsUUFBTztRQUFTQyxLQUFJO2tCQUN4Qyw0RUFBQ0M7WUFBSUMsV0FBVTs7OEJBQ1gsOERBQUNDO29CQUFHRCxXQUFVOzhCQUE2QlAsS0FBS1MsSUFBSTs7Ozs7OzhCQUNwRCw4REFBQ0M7b0JBQUVILFdBQVU7OEJBQTRDUCxLQUFLVyxXQUFXOzs7Ozs7OEJBQ3pFLDhEQUFDTDtvQkFBSUMsV0FBVTs7c0NBQ1gsOERBQUNEOzRCQUFJQyxXQUFVOzs4Q0FDUCw4REFBQ2IscURBQVU7b0NBQ0hhLFdBQVU7b0NBQ1ZLLE9BQU87d0NBQUVDLFlBQVloQixLQUFLLENBQUNHLEtBQUtjLFFBQVEsR0FBR2QsS0FBS2MsUUFBUSxHQUFHLFNBQVMsQ0FBQyxDQUFDaEIsS0FBSzt3Q0FBRWlCLFFBQVEsQ0FBQyxVQUFVLEVBQUVsQixLQUFLLENBQUNHLEtBQUtjLFFBQVEsR0FBR2QsS0FBS2MsUUFBUSxHQUFHLFNBQVMsQ0FBQyxDQUFDaEIsS0FBSyxDQUFDLENBQUM7b0NBQUM7Ozs7Ozs4Q0FFbkssOERBQUNVO29DQUFHRCxXQUFVOzhDQUFzQlAsS0FBS2MsUUFBUSxJQUFJOzs7Ozs7Ozs7Ozs7c0NBRTdELDhEQUFDUjs0QkFBSUMsV0FBVTs7OENBQ1gsOERBQUNYLHlEQUFhQTtvQ0FBQ1csV0FBVTs7Ozs7O2dDQUFvQztnQ0FBRVAsS0FBS2dCLGdCQUFnQjs7Ozs7OztzQ0FFeEYsOERBQUNWOzRCQUFJQyxXQUFVOzs4Q0FDWCw4REFBQ1osMkRBQWVBO29DQUFDWSxXQUFVOzs7Ozs7Z0NBQW9DO2dDQUFFUCxLQUFLaUIsV0FBVzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBTXpHLEVBQUMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9wb3J0Zm9saW8tbmV4dGpzLy4vc3JjL2NvbXBvbmVudHMvUmVwb0NhcmQudHN4PzMwMjkiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgSWNvblR5cGUgfSBmcm9tIFwicmVhY3QtaWNvbnNcIlxuaW1wb3J0IHsgU2lKYXZhc2NyaXB0LCBTaVR5cGVzY3JpcHQsIFNpSHRtbDUgfSBmcm9tIFwicmVhY3QtaWNvbnMvc2lcIlxuaW1wb3J0IHsgbW90aW9uIH0gZnJvbSBcImZyYW1lci1tb3Rpb25cIlxuaW1wb3J0IHtCaUdpdFJlcG9Gb3JrZWR9IGZyb20gXCJyZWFjdC1pY29ucy9iaVwiXG5pbXBvcnQge0FpT3V0bGluZVN0YXJ9IGZyb20gXCJyZWFjdC1pY29ucy9haVwiXG50eXBlIExhbmcgPSB7XG4gICAgY29sb3I6IHN0cmluZ1xufVxuXG5pbnRlcmZhY2UgTGFuZ3Mge1xuICAgIFtrZXk6IHN0cmluZ106IExhbmdcbn1cblxuY29uc3QgbGFuZ3MgPSB7XG4gICAgXCJKYXZhU2NyaXB0XCI6IHtcbiAgICAgICAgY29sb3I6IFwiI2YwZGI0ZlwiXG4gICAgfSxcbiAgICBcIlR5cGVTY3JpcHRcIjoge1xuICAgICAgICBjb2xvcjogXCIjMzE3OGM2XCJcbiAgICB9LFxuICAgIFwiSFRNTFwiOiB7XG4gICAgICAgIGNvbG9yOiBcIiNlMzRjMjZcIlxuICAgIH0sXG4gICAgXCJ1bmtub3duXCI6IHtcbiAgICAgICAgY29sb3I6IFwiIzAwMDAwMFwiXG4gICAgfVxufSBhcyBMYW5nc1xuXG5leHBvcnQgdHlwZSBSZXBvID0ge1xuICAgIG5hbWU6IHN0cmluZyxcbiAgICBkZXNjcmlwdGlvbjogc3RyaW5nLFxuICAgIGh0bWxfdXJsOiBzdHJpbmcsXG4gICAgc3RhcmdhemVyc19jb3VudDogbnVtYmVyLFxuICAgIGZvcmtzX2NvdW50OiBudW1iZXIsXG4gICAgbGFuZ3VhZ2U6IHN0cmluZ1xufVxuXG5leHBvcnQgY29uc3QgUmVwb0NhcmQgPSAoeyByZXBvIH06IHsgcmVwbzogUmVwbyB9KSA9PiB7XG4gICAgcmV0dXJuIChcbiAgICAgICAgPGEgaHJlZj17cmVwby5odG1sX3VybH0gdGFyZ2V0PVwiX2JsYW5rXCIgcmVsPVwibm9yZWZlcnJlclwiPlxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJ3LWZ1bGwgaC1bMTByZW1dIGRhcms6Ymctc2xhdGUtOTAwLzUgYm9yZGVyLVsxcHhdIGRhcms6Ym9yZGVyLXNsYXRlLTcwMC8yMCByb3VuZGVkLWxnIGZsZXggZmxleC1jb2wgaXRlbXMtbGVmdCBwLTQgZ2FwLTIgZGFyazpob3Zlcjpib3JkZXItc2xhdGUtNzAwLzkwIGN1cnNvci1wb2ludGVyXCI+XG4gICAgICAgICAgICAgICAgPGgxIGNsYXNzTmFtZT1cImZvbnQtYm9sZCBkYXJrOnRleHQtd2hpdGVcIj57cmVwby5uYW1lfTwvaDE+XG4gICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwiZGFyazp0ZXh0LWdyYXktMzAwIHRleHQtc20gdGV4dC1ncmF5LTQwMFwiPntyZXBvLmRlc2NyaXB0aW9ufTwvcD5cbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImZsZXggZmxleC1yb3cgaXRlbXMtY2VudGVyIGdhcC00IG10LWF1dG8gdGV4dC1zbSBkYXJrOnRleHQtZ3JheS0zMDBcIj5cbiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmbGV4IGl0ZW1zLWNlbnRlclwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxtb3Rpb24uZGl2XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBjbGFzc05hbWU9XCJ3LTMgaC0zIHJvdW5kZWQtZnVsbCBtci0yXCJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHN0eWxlPXt7IGJhY2tncm91bmQ6IGxhbmdzW3JlcG8ubGFuZ3VhZ2UgPyByZXBvLmxhbmd1YWdlIDogXCJ1bmtub3duXCJdLmNvbG9yLCBib3JkZXI6IGBzb2xpZCAzcHggJHtsYW5nc1tyZXBvLmxhbmd1YWdlID8gcmVwby5sYW5ndWFnZSA6IFwidW5rbm93blwiXS5jb2xvcn1gIH19XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC8+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPGgxIGNsYXNzTmFtZT1cImRhcms6dGV4dC1ncmF5LTMwMFwiPntyZXBvLmxhbmd1YWdlIHx8IFwiVW5rbm93blwifTwvaDE+XG4gICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyXCI+XG4gICAgICAgICAgICAgICAgICAgICAgICA8QWlPdXRsaW5lU3RhciBjbGFzc05hbWU9XCJkYXJrOnRleHQtZ3JheS0zMDAgbXItMSB3LTQgaC00XCIgLz4ge3JlcG8uc3RhcmdhemVyc19jb3VudH1cbiAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXJcIj5cbiAgICAgICAgICAgICAgICAgICAgICAgIDxCaUdpdFJlcG9Gb3JrZWQgY2xhc3NOYW1lPVwiZGFyazp0ZXh0LWdyYXktMzAwIG1yLTEgdy00IGgtNFwiIC8+IHtyZXBvLmZvcmtzX2NvdW50fVxuICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICA8L2E+XG4gICAgKVxufSJdLCJuYW1lcyI6WyJtb3Rpb24iLCJCaUdpdFJlcG9Gb3JrZWQiLCJBaU91dGxpbmVTdGFyIiwibGFuZ3MiLCJjb2xvciIsIlJlcG9DYXJkIiwicmVwbyIsImEiLCJocmVmIiwiaHRtbF91cmwiLCJ0YXJnZXQiLCJyZWwiLCJkaXYiLCJjbGFzc05hbWUiLCJoMSIsIm5hbWUiLCJwIiwiZGVzY3JpcHRpb24iLCJzdHlsZSIsImJhY2tncm91bmQiLCJsYW5ndWFnZSIsImJvcmRlciIsInN0YXJnYXplcnNfY291bnQiLCJmb3Jrc19jb3VudCJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/components/RepoCard.tsx\n");
 
 /***/ }),
 
-/***/ 8218:
+/***/ "./src/components/TechItem.tsx":
+/*!*************************************!*\
+  !*** ./src/components/TechItem.tsx ***!
+  \*************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Q": () => (/* binding */ TechItem)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _tippyjs_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4787);
-/* harmony import */ var _tippyjs_react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_tippyjs_react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var tippy_js_dist_tippy_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8933);
-/* harmony import */ var tippy_js_dist_tippy_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(tippy_js_dist_tippy_css__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var tippy_js_animations_perspective_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(7700);
-/* harmony import */ var tippy_js_animations_perspective_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(tippy_js_animations_perspective_css__WEBPACK_IMPORTED_MODULE_3__);
-
-
-
-
-const TechItem = ({ Icon , title  })=>{
-    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((_tippyjs_react__WEBPACK_IMPORTED_MODULE_1___default()), {
-        className: "dark:bg-slate-900/50 mr-[10px]",
-        arrow: false,
-        theme: "custom",
-        content: title,
-        placement: "top",
-        animation: "perspective",
-        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(Icon, {
-                size: 35,
-                className: "mr-[10px] font-bold p-1 dark:text-white"
-            })
-        })
-    });
-};
-
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"TechItem\": () => (/* binding */ TechItem)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _tippyjs_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @tippyjs/react */ \"@tippyjs/react\");\n/* harmony import */ var _tippyjs_react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_tippyjs_react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var tippy_js_dist_tippy_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! tippy.js/dist/tippy.css */ \"./node_modules/tippy.js/dist/tippy.css\");\n/* harmony import */ var tippy_js_dist_tippy_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(tippy_js_dist_tippy_css__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var tippy_js_animations_perspective_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! tippy.js/animations/perspective.css */ \"./node_modules/tippy.js/animations/perspective.css\");\n/* harmony import */ var tippy_js_animations_perspective_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(tippy_js_animations_perspective_css__WEBPACK_IMPORTED_MODULE_3__);\n\n\n\n\nconst TechItem = ({ Icon , title  })=>{\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((_tippyjs_react__WEBPACK_IMPORTED_MODULE_1___default()), {\n        className: \"dark:bg-slate-900/50 mr-[10px]\",\n        arrow: false,\n        theme: \"custom\",\n        content: title,\n        placement: \"top\",\n        animation: \"perspective\",\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"span\", {\n            children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(Icon, {\n                size: 35,\n                className: \"mr-[10px] font-bold p-1 dark:text-white\"\n            }, void 0, false, {\n                fileName: \"/home/justfossa/coding/portfolio/src/components/TechItem.tsx\",\n                lineNumber: 9,\n                columnNumber: 27\n            }, undefined)\n        }, void 0, false, {\n            fileName: \"/home/justfossa/coding/portfolio/src/components/TechItem.tsx\",\n            lineNumber: 9,\n            columnNumber: 21\n        }, undefined)\n    }, void 0, false, {\n        fileName: \"/home/justfossa/coding/portfolio/src/components/TechItem.tsx\",\n        lineNumber: 8,\n        columnNumber: 13\n    }, undefined);\n};\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvY29tcG9uZW50cy9UZWNoSXRlbS50c3guanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7OztBQUFtQztBQUVGO0FBQ1c7QUFFckMsTUFBTUMsV0FBVyxDQUFDLEVBQUVDLEtBQUksRUFBRUMsTUFBSyxFQUFxQyxHQUFLO0lBQzVFLHFCQUNRLDhEQUFDSCx1REFBS0E7UUFBQ0ksV0FBVTtRQUFpQ0MsT0FBTyxLQUFLO1FBQUVDLE9BQU07UUFBU0MsU0FBU0o7UUFBT0ssV0FBVztRQUFPQyxXQUFXO2tCQUNwSCw0RUFBQ0M7c0JBQUssNEVBQUNSO2dCQUFLUyxNQUFNO2dCQUFJUCxXQUFVOzs7Ozs7Ozs7Ozs7Ozs7O0FBR3BELEVBQUMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9wb3J0Zm9saW8tbmV4dGpzLy4vc3JjL2NvbXBvbmVudHMvVGVjaEl0ZW0udHN4P2JlNTQiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFRpcHB5IGZyb20gXCJAdGlwcHlqcy9yZWFjdFwiO1xuaW1wb3J0IHsgSWNvblR5cGUgfSBmcm9tIFwicmVhY3QtaWNvbnNcIjtcbmltcG9ydCAndGlwcHkuanMvZGlzdC90aXBweS5jc3MnO1xuaW1wb3J0ICd0aXBweS5qcy9hbmltYXRpb25zL3BlcnNwZWN0aXZlLmNzcydcblxuZXhwb3J0IGNvbnN0IFRlY2hJdGVtID0gKHsgSWNvbiwgdGl0bGUgfTogeyBJY29uOiBJY29uVHlwZSwgdGl0bGU6IHN0cmluZyB9KSA9PiB7XG4gICAgcmV0dXJuIChcbiAgICAgICAgICAgIDxUaXBweSBjbGFzc05hbWU9XCJkYXJrOmJnLXNsYXRlLTkwMC81MCBtci1bMTBweF1cIiBhcnJvdz17ZmFsc2V9IHRoZW1lPSdjdXN0b20nIGNvbnRlbnQ9e3RpdGxlfSBwbGFjZW1lbnQ9e1widG9wXCJ9IGFuaW1hdGlvbj17XCJwZXJzcGVjdGl2ZVwifT5cbiAgICAgICAgICAgICAgICAgICAgPHNwYW4+PEljb24gc2l6ZT17MzV9IGNsYXNzTmFtZT1cIm1yLVsxMHB4XSBmb250LWJvbGQgcC0xIGRhcms6dGV4dC13aGl0ZVwiICAvPjwvc3Bhbj5cbiAgICAgICAgICAgIDwvVGlwcHk+XG4gICAgKVxufSJdLCJuYW1lcyI6WyJUaXBweSIsIlRlY2hJdGVtIiwiSWNvbiIsInRpdGxlIiwiY2xhc3NOYW1lIiwiYXJyb3ciLCJ0aGVtZSIsImNvbnRlbnQiLCJwbGFjZW1lbnQiLCJhbmltYXRpb24iLCJzcGFuIiwic2l6ZSJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/components/TechItem.tsx\n");
 
 /***/ }),
 
-/***/ 5970:
+/***/ "./src/pages/index.tsx":
+/*!*****************************!*\
+  !*** ./src/pages/index.tsx ***!
+  \*****************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ Home),
-/* harmony export */   "getStaticProps": () => (/* binding */ getStaticProps)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6197);
-/* harmony import */ var react_icons_si__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(764);
-/* harmony import */ var react_icons_si__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_icons_si__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_TechItem__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(8218);
-/* harmony import */ var _components_RepoCard__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(1171);
-var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([framer_motion__WEBPACK_IMPORTED_MODULE_1__, _components_RepoCard__WEBPACK_IMPORTED_MODULE_4__]);
-([framer_motion__WEBPACK_IMPORTED_MODULE_1__, _components_RepoCard__WEBPACK_IMPORTED_MODULE_4__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);
-
-
-
-
-
-function Home({ stats , repos  }) {
-    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(framer_motion__WEBPACK_IMPORTED_MODULE_1__.motion.div, {
-            initial: {
-                opacity: 0,
-                scale: 0.95
-            },
-            animate: {
-                opacity: 1,
-                scale: 1
-            },
-            exit: {
-                opacity: 0,
-                scale: 0.95
-            },
-            transition: {
-                ease: "easeOut",
-                duration: 0.5
-            },
-            className: "flex flex-col items-center justify-start mt-24",
-            children: [
-                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                    children: [
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h1", {
-                            className: "text-4xl dark:text-white md:text-5xl font-bold mt-14 mb-4",
-                            children: "Hey, I'm JustFossa \uD83D\uDC4B"
-                        }),
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                            className: " dark:text-gray-300 tracking-wide mb-12",
-                            children: "I'm a self-taught software engineer from the Czech republic. I'm currently pursuing full-stack web development to create stunning user experiences on the front-end, and scalable and secure infrastructure on the backend."
-                        })
-                    ]
-                }),
-                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                    children: [
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h1", {
-                            className: "text-3xl dark:text-white font-medium mb-4",
-                            children: "What I Do \uD83D\uDCAD"
-                        }),
-                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
-                            className: "text dark:text-gray-300 font-light tracking-wide mb-12",
-                            children: [
-                                "I'm passionate about every technology; from designing and developing software, through understanding how many moving parts of the internet work together, to cybersecurity, systems, programming, and so much more. I strive to learn more about these things every day, and utilize my knowledge to further understand ",
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
-                                    children: "how"
-                                }),
-                                " or ",
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
-                                    children: "why"
-                                }),
-                                " the technology around us works."
-                            ]
-                        })
-                    ]
-                }),
-                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                    children: [
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h1", {
-                            className: "text-3xl dark:text-white font-medium mb-4",
-                            children: "Technologies \uD83D\uDCBB"
-                        }),
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                            className: "text dark:text-gray-300 font-light tracking-wide mb-12",
-                            children: "I use a variety of tools to streamline my development process and increase the quality of both my code, and my projects. Below is a list of technologies and languages I've had experience with in the past, or use currently."
-                        })
-                    ]
-                }),
-                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                    className: "flex flex-wrap justify-center p-2 flex-row dark:border-slate-800/50 dark:bg-slate-900/5 border-[1px] rounded-md h-auto items-center",
-                    children: [
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_TechItem__WEBPACK_IMPORTED_MODULE_3__/* .TechItem */ .Q, {
-                            Icon: react_icons_si__WEBPACK_IMPORTED_MODULE_2__.SiTypescript,
-                            title: "Typescript"
-                        }),
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_TechItem__WEBPACK_IMPORTED_MODULE_3__/* .TechItem */ .Q, {
-                            Icon: react_icons_si__WEBPACK_IMPORTED_MODULE_2__.SiReact,
-                            title: "React"
-                        }),
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_TechItem__WEBPACK_IMPORTED_MODULE_3__/* .TechItem */ .Q, {
-                            Icon: react_icons_si__WEBPACK_IMPORTED_MODULE_2__.SiNextdotjs,
-                            title: "Next.js"
-                        }),
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_TechItem__WEBPACK_IMPORTED_MODULE_3__/* .TechItem */ .Q, {
-                            Icon: react_icons_si__WEBPACK_IMPORTED_MODULE_2__.SiVisualstudiocode,
-                            title: "VS Code"
-                        }),
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_TechItem__WEBPACK_IMPORTED_MODULE_3__/* .TechItem */ .Q, {
-                            Icon: react_icons_si__WEBPACK_IMPORTED_MODULE_2__.SiJavascript,
-                            title: "Javascript"
-                        }),
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_TechItem__WEBPACK_IMPORTED_MODULE_3__/* .TechItem */ .Q, {
-                            Icon: react_icons_si__WEBPACK_IMPORTED_MODULE_2__.SiNodedotjs,
-                            title: "Node.js"
-                        }),
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_TechItem__WEBPACK_IMPORTED_MODULE_3__/* .TechItem */ .Q, {
-                            Icon: react_icons_si__WEBPACK_IMPORTED_MODULE_2__.SiTailwindcss,
-                            title: "TailwindCSS"
-                        }),
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_TechItem__WEBPACK_IMPORTED_MODULE_3__/* .TechItem */ .Q, {
-                            Icon: react_icons_si__WEBPACK_IMPORTED_MODULE_2__.SiYarn,
-                            title: "Yarn"
-                        }),
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_TechItem__WEBPACK_IMPORTED_MODULE_3__/* .TechItem */ .Q, {
-                            Icon: react_icons_si__WEBPACK_IMPORTED_MODULE_2__.SiNpm,
-                            title: "NPM"
-                        }),
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_TechItem__WEBPACK_IMPORTED_MODULE_3__/* .TechItem */ .Q, {
-                            Icon: react_icons_si__WEBPACK_IMPORTED_MODULE_2__.SiMongodb,
-                            title: "MongoDB"
-                        }),
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_TechItem__WEBPACK_IMPORTED_MODULE_3__/* .TechItem */ .Q, {
-                            Icon: react_icons_si__WEBPACK_IMPORTED_MODULE_2__.SiUbuntu,
-                            title: "Ubuntu"
-                        }),
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_TechItem__WEBPACK_IMPORTED_MODULE_3__/* .TechItem */ .Q, {
-                            Icon: react_icons_si__WEBPACK_IMPORTED_MODULE_2__.SiGit,
-                            title: "Git"
-                        }),
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_TechItem__WEBPACK_IMPORTED_MODULE_3__/* .TechItem */ .Q, {
-                            Icon: react_icons_si__WEBPACK_IMPORTED_MODULE_2__.SiArduino,
-                            title: "Arduino"
-                        }),
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_TechItem__WEBPACK_IMPORTED_MODULE_3__/* .TechItem */ .Q, {
-                            Icon: react_icons_si__WEBPACK_IMPORTED_MODULE_2__.SiExpress,
-                            title: "Express.js"
-                        }),
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_TechItem__WEBPACK_IMPORTED_MODULE_3__/* .TechItem */ .Q, {
-                            Icon: react_icons_si__WEBPACK_IMPORTED_MODULE_2__.SiChartdotjs,
-                            title: "Chart.js"
-                        })
-                    ]
-                }),
-                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                    children: [
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h1", {
-                            className: "text-3xl dark:text-white font-medium mb-4 mt-12",
-                            children: "Projects \uD83D\uDEE0️"
-                        }),
-                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
-                            className: "text dark:text-gray-300 font-light tracking-wide mb-12",
-                            children: [
-                                "In my free time, I enjoy creating open source projects on ",
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                    className: "text-violet-600 font-bold hover:underline",
-                                    rel: "noreferrer",
-                                    href: "https://github.com/JustFossa",
-                                    children: "GitHub"
-                                }),
-                                ", so I can learn from others and showcase what I know. In total, all of my open sourced projects have earned me ",
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                    className: "font-bold dark:text-slate-200",
-                                    children: stats.stars
-                                }),
-                                " stars on GitHub, and ",
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                    className: "font-bold dark:text-slate-200",
-                                    children: stats.forks
-                                }),
-                                " forks. Below are some of my most popular repositories."
-                            ]
-                        }),
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                            className: "w-full grid gap-2 md:grid-rows-1 md:grid-cols-2 grid-cols-1 mb-12",
-                            children: repos.map((repo)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_RepoCard__WEBPACK_IMPORTED_MODULE_4__/* .RepoCard */ .W, {
-                                    repo: repo
-                                }, repo.name))
-                        })
-                    ]
-                })
-            ]
-        })
-    });
-}
-const getStaticProps = async ()=>{
-    const stats = await fetch("https://api.github-star-counter.workers.dev/user/justfossa").then((res)=>res.json());
-    const repos = await fetch("https://api.github.com/users/justfossa/repos?type=owner&per_page=100").then((res)=>res.json());
-    const topRepos = repos.sort((a, b)=>b.stargazers_count - a.stargazers_count).slice(0, 4);
-    return {
-        props: {
-            stats: stats,
-            repos: topRepos
-        }
-    };
-};
-
-__webpack_async_result__();
-} catch(e) { __webpack_async_result__(e); } });
+eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Home),\n/* harmony export */   \"getStaticProps\": () => (/* binding */ getStaticProps)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! framer-motion */ \"framer-motion\");\n/* harmony import */ var react_icons_si__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-icons/si */ \"react-icons/si\");\n/* harmony import */ var react_icons_si__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_icons_si__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _components_TechItem__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/components/TechItem */ \"./src/components/TechItem.tsx\");\n/* harmony import */ var _components_RepoCard__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/components/RepoCard */ \"./src/components/RepoCard.tsx\");\nvar __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([framer_motion__WEBPACK_IMPORTED_MODULE_1__, _components_RepoCard__WEBPACK_IMPORTED_MODULE_4__]);\n([framer_motion__WEBPACK_IMPORTED_MODULE_1__, _components_RepoCard__WEBPACK_IMPORTED_MODULE_4__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);\n\n\n\n\n\nfunction Home({ stats , repos  }) {\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(framer_motion__WEBPACK_IMPORTED_MODULE_1__.motion.div, {\n            initial: {\n                opacity: 0,\n                scale: 0.95\n            },\n            animate: {\n                opacity: 1,\n                scale: 1\n            },\n            exit: {\n                opacity: 0,\n                scale: 0.95\n            },\n            transition: {\n                ease: \"easeOut\",\n                duration: 0.5\n            },\n            className: \"flex flex-col items-center justify-start mt-24\",\n            children: [\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                    children: [\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h1\", {\n                            className: \"text-4xl dark:text-white md:text-5xl font-bold mt-14 mb-4\",\n                            children: \"Hey, I'm JustFossa \\uD83D\\uDC4B\"\n                        }, void 0, false, {\n                            fileName: \"/home/justfossa/coding/portfolio/src/pages/index.tsx\",\n                            lineNumber: 37,\n                            columnNumber: 17\n                        }, this),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                            className: \" dark:text-gray-300 tracking-wide mb-12\",\n                            children: \"I'm a self-taught software engineer from the Czech republic. I'm currently pursuing full-stack web development to create stunning user experiences on the front-end, and scalable and secure infrastructure on the backend.\"\n                        }, void 0, false, {\n                            fileName: \"/home/justfossa/coding/portfolio/src/pages/index.tsx\",\n                            lineNumber: 38,\n                            columnNumber: 21\n                        }, this)\n                    ]\n                }, void 0, true, {\n                    fileName: \"/home/justfossa/coding/portfolio/src/pages/index.tsx\",\n                    lineNumber: 36,\n                    columnNumber: 17\n                }, this),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                    children: [\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h1\", {\n                            className: \"text-3xl dark:text-white font-medium mb-4\",\n                            children: \"What I Do \\uD83D\\uDCAD\"\n                        }, void 0, false, {\n                            fileName: \"/home/justfossa/coding/portfolio/src/pages/index.tsx\",\n                            lineNumber: 41,\n                            columnNumber: 21\n                        }, this),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                            className: \"text dark:text-gray-300 font-light tracking-wide mb-12\",\n                            children: [\n                                \"I'm passionate about every technology; from designing and developing software, through understanding how many moving parts of the internet work together, to cybersecurity, systems, programming, and so much more. I strive to learn more about these things every day, and utilize my knowledge to further understand \",\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"i\", {\n                                    children: \"how\"\n                                }, void 0, false, {\n                                    fileName: \"/home/justfossa/coding/portfolio/src/pages/index.tsx\",\n                                    lineNumber: 42,\n                                    columnNumber: 408\n                                }, this),\n                                \" or \",\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"i\", {\n                                    children: \"why\"\n                                }, void 0, false, {\n                                    fileName: \"/home/justfossa/coding/portfolio/src/pages/index.tsx\",\n                                    lineNumber: 42,\n                                    columnNumber: 422\n                                }, this),\n                                \" the technology around us works.\"\n                            ]\n                        }, void 0, true, {\n                            fileName: \"/home/justfossa/coding/portfolio/src/pages/index.tsx\",\n                            lineNumber: 42,\n                            columnNumber: 21\n                        }, this)\n                    ]\n                }, void 0, true, {\n                    fileName: \"/home/justfossa/coding/portfolio/src/pages/index.tsx\",\n                    lineNumber: 40,\n                    columnNumber: 17\n                }, this),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                    children: [\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h1\", {\n                            className: \"text-3xl dark:text-white font-medium mb-4\",\n                            children: \"Technologies \\uD83D\\uDCBB\"\n                        }, void 0, false, {\n                            fileName: \"/home/justfossa/coding/portfolio/src/pages/index.tsx\",\n                            lineNumber: 45,\n                            columnNumber: 21\n                        }, this),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                            className: \"text dark:text-gray-300 font-light tracking-wide mb-12\",\n                            children: \"I use a variety of tools to streamline my development process and increase the quality of both my code, and my projects. Below is a list of technologies and languages I've had experience with in the past, or use currently.\"\n                        }, void 0, false, {\n                            fileName: \"/home/justfossa/coding/portfolio/src/pages/index.tsx\",\n                            lineNumber: 46,\n                            columnNumber: 21\n                        }, this)\n                    ]\n                }, void 0, true, {\n                    fileName: \"/home/justfossa/coding/portfolio/src/pages/index.tsx\",\n                    lineNumber: 44,\n                    columnNumber: 17\n                }, this),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                    className: \"flex flex-wrap justify-center p-2 flex-row dark:border-slate-800/50 dark:bg-slate-900/5 border-[1px] rounded-md h-auto items-center\",\n                    children: [\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_TechItem__WEBPACK_IMPORTED_MODULE_3__.TechItem, {\n                            Icon: react_icons_si__WEBPACK_IMPORTED_MODULE_2__.SiTypescript,\n                            title: \"Typescript\"\n                        }, void 0, false, {\n                            fileName: \"/home/justfossa/coding/portfolio/src/pages/index.tsx\",\n                            lineNumber: 49,\n                            columnNumber: 21\n                        }, this),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_TechItem__WEBPACK_IMPORTED_MODULE_3__.TechItem, {\n                            Icon: react_icons_si__WEBPACK_IMPORTED_MODULE_2__.SiReact,\n                            title: \"React\"\n                        }, void 0, false, {\n                            fileName: \"/home/justfossa/coding/portfolio/src/pages/index.tsx\",\n                            lineNumber: 50,\n                            columnNumber: 21\n                        }, this),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_TechItem__WEBPACK_IMPORTED_MODULE_3__.TechItem, {\n                            Icon: react_icons_si__WEBPACK_IMPORTED_MODULE_2__.SiNextdotjs,\n                            title: \"Next.js\"\n                        }, void 0, false, {\n                            fileName: \"/home/justfossa/coding/portfolio/src/pages/index.tsx\",\n                            lineNumber: 51,\n                            columnNumber: 21\n                        }, this),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_TechItem__WEBPACK_IMPORTED_MODULE_3__.TechItem, {\n                            Icon: react_icons_si__WEBPACK_IMPORTED_MODULE_2__.SiVisualstudiocode,\n                            title: \"VS Code\"\n                        }, void 0, false, {\n                            fileName: \"/home/justfossa/coding/portfolio/src/pages/index.tsx\",\n                            lineNumber: 52,\n                            columnNumber: 21\n                        }, this),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_TechItem__WEBPACK_IMPORTED_MODULE_3__.TechItem, {\n                            Icon: react_icons_si__WEBPACK_IMPORTED_MODULE_2__.SiJavascript,\n                            title: \"Javascript\"\n                        }, void 0, false, {\n                            fileName: \"/home/justfossa/coding/portfolio/src/pages/index.tsx\",\n                            lineNumber: 53,\n                            columnNumber: 21\n                        }, this),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_TechItem__WEBPACK_IMPORTED_MODULE_3__.TechItem, {\n                            Icon: react_icons_si__WEBPACK_IMPORTED_MODULE_2__.SiNodedotjs,\n                            title: \"Node.js\"\n                        }, void 0, false, {\n                            fileName: \"/home/justfossa/coding/portfolio/src/pages/index.tsx\",\n                            lineNumber: 54,\n                            columnNumber: 21\n                        }, this),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_TechItem__WEBPACK_IMPORTED_MODULE_3__.TechItem, {\n                            Icon: react_icons_si__WEBPACK_IMPORTED_MODULE_2__.SiTailwindcss,\n                            title: \"TailwindCSS\"\n                        }, void 0, false, {\n                            fileName: \"/home/justfossa/coding/portfolio/src/pages/index.tsx\",\n                            lineNumber: 55,\n                            columnNumber: 21\n                        }, this),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_TechItem__WEBPACK_IMPORTED_MODULE_3__.TechItem, {\n                            Icon: react_icons_si__WEBPACK_IMPORTED_MODULE_2__.SiYarn,\n                            title: \"Yarn\"\n                        }, void 0, false, {\n                            fileName: \"/home/justfossa/coding/portfolio/src/pages/index.tsx\",\n                            lineNumber: 56,\n                            columnNumber: 21\n                        }, this),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_TechItem__WEBPACK_IMPORTED_MODULE_3__.TechItem, {\n                            Icon: react_icons_si__WEBPACK_IMPORTED_MODULE_2__.SiNpm,\n                            title: \"NPM\"\n                        }, void 0, false, {\n                            fileName: \"/home/justfossa/coding/portfolio/src/pages/index.tsx\",\n                            lineNumber: 57,\n                            columnNumber: 21\n                        }, this),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_TechItem__WEBPACK_IMPORTED_MODULE_3__.TechItem, {\n                            Icon: react_icons_si__WEBPACK_IMPORTED_MODULE_2__.SiMongodb,\n                            title: \"MongoDB\"\n                        }, void 0, false, {\n                            fileName: \"/home/justfossa/coding/portfolio/src/pages/index.tsx\",\n                            lineNumber: 58,\n                            columnNumber: 21\n                        }, this),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_TechItem__WEBPACK_IMPORTED_MODULE_3__.TechItem, {\n                            Icon: react_icons_si__WEBPACK_IMPORTED_MODULE_2__.SiUbuntu,\n                            title: \"Ubuntu\"\n                        }, void 0, false, {\n                            fileName: \"/home/justfossa/coding/portfolio/src/pages/index.tsx\",\n                            lineNumber: 59,\n                            columnNumber: 21\n                        }, this),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_TechItem__WEBPACK_IMPORTED_MODULE_3__.TechItem, {\n                            Icon: react_icons_si__WEBPACK_IMPORTED_MODULE_2__.SiGit,\n                            title: \"Git\"\n                        }, void 0, false, {\n                            fileName: \"/home/justfossa/coding/portfolio/src/pages/index.tsx\",\n                            lineNumber: 60,\n                            columnNumber: 21\n                        }, this),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_TechItem__WEBPACK_IMPORTED_MODULE_3__.TechItem, {\n                            Icon: react_icons_si__WEBPACK_IMPORTED_MODULE_2__.SiArduino,\n                            title: \"Arduino\"\n                        }, void 0, false, {\n                            fileName: \"/home/justfossa/coding/portfolio/src/pages/index.tsx\",\n                            lineNumber: 61,\n                            columnNumber: 21\n                        }, this),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_TechItem__WEBPACK_IMPORTED_MODULE_3__.TechItem, {\n                            Icon: react_icons_si__WEBPACK_IMPORTED_MODULE_2__.SiExpress,\n                            title: \"Express.js\"\n                        }, void 0, false, {\n                            fileName: \"/home/justfossa/coding/portfolio/src/pages/index.tsx\",\n                            lineNumber: 62,\n                            columnNumber: 21\n                        }, this),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_TechItem__WEBPACK_IMPORTED_MODULE_3__.TechItem, {\n                            Icon: react_icons_si__WEBPACK_IMPORTED_MODULE_2__.SiChartdotjs,\n                            title: \"Chart.js\"\n                        }, void 0, false, {\n                            fileName: \"/home/justfossa/coding/portfolio/src/pages/index.tsx\",\n                            lineNumber: 63,\n                            columnNumber: 21\n                        }, this)\n                    ]\n                }, void 0, true, {\n                    fileName: \"/home/justfossa/coding/portfolio/src/pages/index.tsx\",\n                    lineNumber: 48,\n                    columnNumber: 17\n                }, this),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                    children: [\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h1\", {\n                            className: \"text-3xl dark:text-white font-medium mb-4 mt-12\",\n                            children: \"Projects \\uD83D\\uDEE0️\"\n                        }, void 0, false, {\n                            fileName: \"/home/justfossa/coding/portfolio/src/pages/index.tsx\",\n                            lineNumber: 66,\n                            columnNumber: 21\n                        }, this),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                            className: \"text dark:text-gray-300 font-light tracking-wide mb-12\",\n                            children: [\n                                \"In my free time, I enjoy creating open source projects on \",\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"a\", {\n                                    className: \"text-violet-600 font-bold hover:underline\",\n                                    rel: \"noreferrer\",\n                                    href: \"https://github.com/JustFossa\",\n                                    children: \"GitHub\"\n                                }, void 0, false, {\n                                    fileName: \"/home/justfossa/coding/portfolio/src/pages/index.tsx\",\n                                    lineNumber: 68,\n                                    columnNumber: 79\n                                }, this),\n                                \", so I can learn from others and showcase what I know. In total, all of my open sourced projects have earned me \",\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"span\", {\n                                    className: \"font-bold dark:text-slate-200\",\n                                    children: stats.stars\n                                }, void 0, false, {\n                                    fileName: \"/home/justfossa/coding/portfolio/src/pages/index.tsx\",\n                                    lineNumber: 68,\n                                    columnNumber: 311\n                                }, this),\n                                \" stars on GitHub, and \",\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"span\", {\n                                    className: \"font-bold dark:text-slate-200\",\n                                    children: stats.forks\n                                }, void 0, false, {\n                                    fileName: \"/home/justfossa/coding/portfolio/src/pages/index.tsx\",\n                                    lineNumber: 68,\n                                    columnNumber: 401\n                                }, this),\n                                \" forks. Below are some of my most popular repositories.\"\n                            ]\n                        }, void 0, true, {\n                            fileName: \"/home/justfossa/coding/portfolio/src/pages/index.tsx\",\n                            lineNumber: 67,\n                            columnNumber: 21\n                        }, this),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                            className: \"w-full grid gap-2 md:grid-rows-1 md:grid-cols-2 grid-cols-1 mb-12\",\n                            children: repos.map((repo)=>/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_RepoCard__WEBPACK_IMPORTED_MODULE_4__.RepoCard, {\n                                    repo: repo\n                                }, repo.name, false, {\n                                    fileName: \"/home/justfossa/coding/portfolio/src/pages/index.tsx\",\n                                    lineNumber: 73,\n                                    columnNumber: 33\n                                }, this))\n                        }, void 0, false, {\n                            fileName: \"/home/justfossa/coding/portfolio/src/pages/index.tsx\",\n                            lineNumber: 70,\n                            columnNumber: 21\n                        }, this)\n                    ]\n                }, void 0, true, {\n                    fileName: \"/home/justfossa/coding/portfolio/src/pages/index.tsx\",\n                    lineNumber: 65,\n                    columnNumber: 17\n                }, this)\n            ]\n        }, void 0, true, {\n            fileName: \"/home/justfossa/coding/portfolio/src/pages/index.tsx\",\n            lineNumber: 29,\n            columnNumber: 7\n        }, this)\n    }, void 0, false);\n}\nconst getStaticProps = async ()=>{\n    const stats = await fetch(\"https://api.github-star-counter.workers.dev/user/justfossa\").then((res)=>res.json());\n    const repos = await fetch(\"https://api.github.com/users/justfossa/repos?type=owner&per_page=100\").then((res)=>res.json());\n    const topRepos = repos.sort((a, b)=>b.stargazers_count - a.stargazers_count).slice(0, 4);\n    return {\n        props: {\n            stats: stats,\n            repos: topRepos\n        }\n    };\n};\n\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvcGFnZXMvaW5kZXgudHN4LmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBb0M7QUFrQmI7QUFDeUI7QUFDSTtBQUtyQyxTQUFTa0IsS0FBSyxFQUFDQyxNQUFLLEVBQUVDLE1BQUssRUFBTSxFQUFFO0lBQ2hELHFCQUNFO2tCQUNFLDRFQUFDcEIscURBQVU7WUFDVHNCLFNBQVM7Z0JBQUVDLFNBQVM7Z0JBQUdDLE9BQU87WUFBSztZQUNuQ0MsU0FBUztnQkFBRUYsU0FBUztnQkFBR0MsT0FBTztZQUFFO1lBQ2hDRSxNQUFNO2dCQUFFSCxTQUFTO2dCQUFHQyxPQUFPO1lBQUs7WUFDaENHLFlBQVk7Z0JBQUVDLE1BQU07Z0JBQVdDLFVBQVU7WUFBSTtZQUM3Q0MsV0FBVTs7OEJBRUYsOERBQUNUOztzQ0FDRCw4REFBQ1U7NEJBQUdELFdBQVU7c0NBQTREOzs7Ozs7c0NBQ3RFLDhEQUFDRTs0QkFBRUYsV0FBVTtzQ0FBMEM7Ozs7Ozs7Ozs7Ozs4QkFFM0QsOERBQUNUOztzQ0FDRyw4REFBQ1U7NEJBQUdELFdBQVU7c0NBQTRDOzs7Ozs7c0NBQzFELDhEQUFDRTs0QkFBRUYsV0FBVTs7Z0NBQXlEOzhDQUE2VCw4REFBQ0c7OENBQUU7Ozs7OztnQ0FBTzs4Q0FBSSw4REFBQ0E7OENBQUU7Ozs7OztnQ0FBTzs7Ozs7Ozs7Ozs7Ozs4QkFFL1osOERBQUNaOztzQ0FDRyw4REFBQ1U7NEJBQUdELFdBQVU7c0NBQTRDOzs7Ozs7c0NBQzFELDhEQUFDRTs0QkFBRUYsV0FBVTtzQ0FBeUQ7Ozs7Ozs7Ozs7Ozs4QkFFMUUsOERBQUNUO29CQUFJUyxXQUFVOztzQ0FDWCw4REFBQ2QsMERBQVFBOzRCQUFDa0IsTUFBTWhDLHdEQUFZQTs0QkFBRWlDLE9BQU07Ozs7OztzQ0FDcEMsOERBQUNuQiwwREFBUUE7NEJBQUNrQixNQUFNOUIsbURBQU9BOzRCQUFFK0IsT0FBTTs7Ozs7O3NDQUMvQiw4REFBQ25CLDBEQUFRQTs0QkFBQ2tCLE1BQU1uQix1REFBV0E7NEJBQUVvQixPQUFNOzs7Ozs7c0NBQ25DLDhEQUFDbkIsMERBQVFBOzRCQUFDa0IsTUFBTTVCLDhEQUFrQkE7NEJBQUU2QixPQUFNOzs7Ozs7c0NBQzFDLDhEQUFDbkIsMERBQVFBOzRCQUFDa0IsTUFBTS9CLHdEQUFZQTs0QkFBRWdDLE9BQU07Ozs7OztzQ0FDcEMsOERBQUNuQiwwREFBUUE7NEJBQUNrQixNQUFNN0IsdURBQVdBOzRCQUFFOEIsT0FBTTs7Ozs7O3NDQUNuQyw4REFBQ25CLDBEQUFRQTs0QkFBQ2tCLE1BQU0zQix5REFBYUE7NEJBQUU0QixPQUFNOzs7Ozs7c0NBQ3JDLDhEQUFDbkIsMERBQVFBOzRCQUFDa0IsTUFBTTFCLGtEQUFNQTs0QkFBRTJCLE9BQU07Ozs7OztzQ0FDOUIsOERBQUNuQiwwREFBUUE7NEJBQUNrQixNQUFNekIsaURBQUtBOzRCQUFFMEIsT0FBTTs7Ozs7O3NDQUM3Qiw4REFBQ25CLDBEQUFRQTs0QkFBQ2tCLE1BQU14QixxREFBU0E7NEJBQUV5QixPQUFNOzs7Ozs7c0NBQ2pDLDhEQUFDbkIsMERBQVFBOzRCQUFDa0IsTUFBTXZCLG9EQUFRQTs0QkFBRXdCLE9BQU07Ozs7OztzQ0FDaEMsOERBQUNuQiwwREFBUUE7NEJBQUNrQixNQUFNakMsaURBQUtBOzRCQUFFa0MsT0FBTTs7Ozs7O3NDQUM3Qiw4REFBQ25CLDBEQUFRQTs0QkFBQ2tCLE1BQU10QixxREFBU0E7NEJBQUV1QixPQUFNOzs7Ozs7c0NBQ2pDLDhEQUFDbkIsMERBQVFBOzRCQUFDa0IsTUFBTXJCLHFEQUFTQTs0QkFBRXNCLE9BQU07Ozs7OztzQ0FDakMsOERBQUNuQiwwREFBUUE7NEJBQUNrQixNQUFNcEIsd0RBQVlBOzRCQUFFcUIsT0FBTTs7Ozs7Ozs7Ozs7OzhCQUV4Qyw4REFBQ2Q7O3NDQUNHLDhEQUFDVTs0QkFBR0QsV0FBVTtzQ0FBa0Q7Ozs7OztzQ0FDaEUsOERBQUNFOzRCQUFFRixXQUFVOztnQ0FBeUQ7OENBQ1osOERBQUNNO29DQUFFTixXQUFVO29DQUE0Q08sS0FBSTtvQ0FBYUMsTUFBSzs4Q0FBK0I7Ozs7OztnQ0FBVTs4Q0FBZ0gsOERBQUNDO29DQUFLVCxXQUFVOzhDQUFpQ1gsTUFBTXFCLEtBQUs7Ozs7OztnQ0FBUTs4Q0FBc0IsOERBQUNEO29DQUFLVCxXQUFVOzhDQUFpQ1gsTUFBTXNCLEtBQUs7Ozs7OztnQ0FBUTs7Ozs7OztzQ0FFaGMsOERBQUNwQjs0QkFBSVMsV0FBVTtzQ0FFUFYsTUFBTXNCLEdBQUcsQ0FBQyxDQUFDQyxxQkFDUCw4REFBQzFCLDBEQUFRQTtvQ0FBaUIwQixNQUFNQTttQ0FBakJBLEtBQUtDLElBQUk7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBUXhELENBQUM7QUFDTSxNQUFNQyxpQkFBaUIsVUFBWTtJQUN4QyxNQUFNMUIsUUFBUSxNQUFNMkIsTUFBTSw4REFBOERDLElBQUksQ0FBQ0MsQ0FBQUEsTUFBT0EsSUFBSUMsSUFBSTtJQUM1RyxNQUFNN0IsUUFBUSxNQUFNMEIsTUFBTSx3RUFBd0VDLElBQUksQ0FBQ0MsQ0FBQUEsTUFBT0EsSUFBSUMsSUFBSTtJQUV0SCxNQUFNQyxXQUFXOUIsTUFBTStCLElBQUksQ0FBQyxDQUFDZixHQUF3QmdCLElBQTJCQSxFQUFFQyxnQkFBZ0IsR0FBR2pCLEVBQUVpQixnQkFBZ0IsRUFBRUMsS0FBSyxDQUFDLEdBQUc7SUFFbEksT0FBTztRQUNMQyxPQUFPO1lBQ0xwQyxPQUFPQTtZQUNQQyxPQUFPOEI7UUFDVDtJQUNGO0FBRUYsRUFBQyIsInNvdXJjZXMiOlsid2VicGFjazovL3BvcnRmb2xpby1uZXh0anMvLi9zcmMvcGFnZXMvaW5kZXgudHN4PzE5YTAiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHttb3Rpb259IGZyb20gJ2ZyYW1lci1tb3Rpb24nXG5pbXBvcnQgeyBcbiAgU2lHaXQsXG4gIFNpVHlwZXNjcmlwdCxcbiAgU2lKYXZhc2NyaXB0LFxuICBTaVJlYWN0LFxuICBTaU5vZGVkb3RqcyxcbiAgU2lWaXN1YWxzdHVkaW9jb2RlLFxuICBTaVRhaWx3aW5kY3NzLFxuICBTaVlhcm4sXG4gIFNpTnBtLFxuICBTaU1vbmdvZGIsXG4gIFNpVWJ1bnR1LFxuICBTaUFyZHVpbm8sXG4gIFNpRXhwcmVzcyxcbiAgU2lQb3N0bWFuLFxuICBTaUNoYXJ0ZG90anMsXG4gIFNpTmV4dGRvdGpzXG59IGZyb20gXCJyZWFjdC1pY29ucy9zaVwiXG5pbXBvcnQgeyBUZWNoSXRlbSB9IGZyb20gJ0AvY29tcG9uZW50cy9UZWNoSXRlbSdcbmltcG9ydCB7UmVwbywgUmVwb0NhcmR9IGZyb20gJ0AvY29tcG9uZW50cy9SZXBvQ2FyZCdcbmltcG9ydCB7IEdldFN0YXRpY1Byb3BzIH0gZnJvbSAnbmV4dCdcbmltcG9ydCB7TmF2YmFyfSBmcm9tICdAL2NvbXBvbmVudHMvTmF2YmFyJ1xuXG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIEhvbWUoe3N0YXRzLCByZXBvc306IGFueSkge1xuICByZXR1cm4gKFxuICAgIDw+XG4gICAgICA8bW90aW9uLmRpdlxuICAgICAgICBpbml0aWFsPXt7IG9wYWNpdHk6IDAsIHNjYWxlOiAwLjk1IH19XG4gICAgICAgIGFuaW1hdGU9e3sgb3BhY2l0eTogMSwgc2NhbGU6IDEgfX1cbiAgICAgICAgZXhpdD17eyBvcGFjaXR5OiAwLCBzY2FsZTogMC45NSB9fVxuICAgICAgICB0cmFuc2l0aW9uPXt7IGVhc2U6IFwiZWFzZU91dFwiLCBkdXJhdGlvbjogMC41IH19XG4gICAgICAgIGNsYXNzTmFtZT1cImZsZXggZmxleC1jb2wgaXRlbXMtY2VudGVyIGp1c3RpZnktc3RhcnQgbXQtMjRcIlxuICAgICAgICA+XG4gICAgICAgICAgICAgICAgPGRpdj5cbiAgICAgICAgICAgICAgICA8aDEgY2xhc3NOYW1lPVwidGV4dC00eGwgZGFyazp0ZXh0LXdoaXRlIG1kOnRleHQtNXhsIGZvbnQtYm9sZCBtdC0xNCBtYi00XCI+SGV5LCBJJmFwb3M7bSBKdXN0Rm9zc2Eg8J+RizwvaDE+XG4gICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cIiBkYXJrOnRleHQtZ3JheS0zMDAgdHJhY2tpbmctd2lkZSBtYi0xMlwiPkkmYXBvczttIGEgc2VsZi10YXVnaHQgc29mdHdhcmUgZW5naW5lZXIgZnJvbSB0aGUgQ3plY2ggcmVwdWJsaWMuIEkmYXBvczttIGN1cnJlbnRseSBwdXJzdWluZyBmdWxsLXN0YWNrIHdlYiBkZXZlbG9wbWVudCB0byBjcmVhdGUgc3R1bm5pbmcgdXNlciBleHBlcmllbmNlcyBvbiB0aGUgZnJvbnQtZW5kLCBhbmQgc2NhbGFibGUgYW5kIHNlY3VyZSBpbmZyYXN0cnVjdHVyZSBvbiB0aGUgYmFja2VuZC48L3A+XG4gICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgPGRpdj5cbiAgICAgICAgICAgICAgICAgICAgPGgxIGNsYXNzTmFtZT1cInRleHQtM3hsIGRhcms6dGV4dC13aGl0ZSBmb250LW1lZGl1bSBtYi00XCI+V2hhdCBJIERvIPCfkq08L2gxPlxuICAgICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0IGRhcms6dGV4dC1ncmF5LTMwMCBmb250LWxpZ2h0IHRyYWNraW5nLXdpZGUgbWItMTJcIj5JJmFwb3M7bSBwYXNzaW9uYXRlIGFib3V0IGV2ZXJ5IHRlY2hub2xvZ3k7IGZyb20gZGVzaWduaW5nIGFuZCBkZXZlbG9waW5nIHNvZnR3YXJlLCB0aHJvdWdoIHVuZGVyc3RhbmRpbmcgaG93IG1hbnkgbW92aW5nIHBhcnRzIG9mIHRoZSBpbnRlcm5ldCB3b3JrIHRvZ2V0aGVyLCB0byBjeWJlcnNlY3VyaXR5LCBzeXN0ZW1zLCBwcm9ncmFtbWluZywgYW5kIHNvIG11Y2ggbW9yZS4gSSBzdHJpdmUgdG8gbGVhcm4gbW9yZSBhYm91dCB0aGVzZSB0aGluZ3MgZXZlcnkgZGF5LCBhbmQgdXRpbGl6ZSBteSBrbm93bGVkZ2UgdG8gZnVydGhlciB1bmRlcnN0YW5kIDxpPmhvdzwvaT4gb3IgPGk+d2h5PC9pPiB0aGUgdGVjaG5vbG9neSBhcm91bmQgdXMgd29ya3MuPC9wPlxuICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgIDxkaXY+XG4gICAgICAgICAgICAgICAgICAgIDxoMSBjbGFzc05hbWU9XCJ0ZXh0LTN4bCBkYXJrOnRleHQtd2hpdGUgZm9udC1tZWRpdW0gbWItNFwiPlRlY2hub2xvZ2llcyDwn5K7PC9oMT5cbiAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwidGV4dCBkYXJrOnRleHQtZ3JheS0zMDAgZm9udC1saWdodCB0cmFja2luZy13aWRlIG1iLTEyXCI+SSB1c2UgYSB2YXJpZXR5IG9mIHRvb2xzIHRvIHN0cmVhbWxpbmUgbXkgZGV2ZWxvcG1lbnQgcHJvY2VzcyBhbmQgaW5jcmVhc2UgdGhlIHF1YWxpdHkgb2YgYm90aCBteSBjb2RlLCBhbmQgbXkgcHJvamVjdHMuIEJlbG93IGlzIGEgbGlzdCBvZiB0ZWNobm9sb2dpZXMgYW5kIGxhbmd1YWdlcyBJJmFwb3M7dmUgaGFkIGV4cGVyaWVuY2Ugd2l0aCBpbiB0aGUgcGFzdCwgb3IgdXNlIGN1cnJlbnRseS48L3A+XG4gICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmbGV4IGZsZXgtd3JhcCBqdXN0aWZ5LWNlbnRlciBwLTIgZmxleC1yb3cgZGFyazpib3JkZXItc2xhdGUtODAwLzUwIGRhcms6Ymctc2xhdGUtOTAwLzUgYm9yZGVyLVsxcHhdIHJvdW5kZWQtbWQgaC1hdXRvIGl0ZW1zLWNlbnRlclwiPlxuICAgICAgICAgICAgICAgICAgICA8VGVjaEl0ZW0gSWNvbj17U2lUeXBlc2NyaXB0fSB0aXRsZT1cIlR5cGVzY3JpcHRcIiAvPlxuICAgICAgICAgICAgICAgICAgICA8VGVjaEl0ZW0gSWNvbj17U2lSZWFjdH0gdGl0bGU9XCJSZWFjdFwiIC8+XG4gICAgICAgICAgICAgICAgICAgIDxUZWNoSXRlbSBJY29uPXtTaU5leHRkb3Rqc30gdGl0bGU9XCJOZXh0LmpzXCIgLz5cbiAgICAgICAgICAgICAgICAgICAgPFRlY2hJdGVtIEljb249e1NpVmlzdWFsc3R1ZGlvY29kZX0gdGl0bGU9XCJWUyBDb2RlXCIgLz5cbiAgICAgICAgICAgICAgICAgICAgPFRlY2hJdGVtIEljb249e1NpSmF2YXNjcmlwdH0gdGl0bGU9XCJKYXZhc2NyaXB0XCIgLz5cbiAgICAgICAgICAgICAgICAgICAgPFRlY2hJdGVtIEljb249e1NpTm9kZWRvdGpzfSB0aXRsZT1cIk5vZGUuanNcIiAvPlxuICAgICAgICAgICAgICAgICAgICA8VGVjaEl0ZW0gSWNvbj17U2lUYWlsd2luZGNzc30gdGl0bGU9XCJUYWlsd2luZENTU1wiIC8+XG4gICAgICAgICAgICAgICAgICAgIDxUZWNoSXRlbSBJY29uPXtTaVlhcm59IHRpdGxlPVwiWWFyblwiIC8+XG4gICAgICAgICAgICAgICAgICAgIDxUZWNoSXRlbSBJY29uPXtTaU5wbX0gdGl0bGU9XCJOUE1cIiAvPlxuICAgICAgICAgICAgICAgICAgICA8VGVjaEl0ZW0gSWNvbj17U2lNb25nb2RifSB0aXRsZT1cIk1vbmdvREJcIiAvPlxuICAgICAgICAgICAgICAgICAgICA8VGVjaEl0ZW0gSWNvbj17U2lVYnVudHV9IHRpdGxlPVwiVWJ1bnR1XCIgLz5cbiAgICAgICAgICAgICAgICAgICAgPFRlY2hJdGVtIEljb249e1NpR2l0fSB0aXRsZT1cIkdpdFwiIC8+XG4gICAgICAgICAgICAgICAgICAgIDxUZWNoSXRlbSBJY29uPXtTaUFyZHVpbm99IHRpdGxlPVwiQXJkdWlub1wiIC8+XG4gICAgICAgICAgICAgICAgICAgIDxUZWNoSXRlbSBJY29uPXtTaUV4cHJlc3N9IHRpdGxlPVwiRXhwcmVzcy5qc1wiIC8+XG4gICAgICAgICAgICAgICAgICAgIDxUZWNoSXRlbSBJY29uPXtTaUNoYXJ0ZG90anN9IHRpdGxlPVwiQ2hhcnQuanNcIiAvPlxuICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgIDxkaXY+XG4gICAgICAgICAgICAgICAgICAgIDxoMSBjbGFzc05hbWU9XCJ0ZXh0LTN4bCBkYXJrOnRleHQtd2hpdGUgZm9udC1tZWRpdW0gbWItNCBtdC0xMlwiPlByb2plY3RzIPCfm6DvuI88L2gxPlxuICAgICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0IGRhcms6dGV4dC1ncmF5LTMwMCBmb250LWxpZ2h0IHRyYWNraW5nLXdpZGUgbWItMTJcIj5cbiAgICAgICAgICAgICAgICAgICAgSW4gbXkgZnJlZSB0aW1lLCBJIGVuam95IGNyZWF0aW5nIG9wZW4gc291cmNlIHByb2plY3RzIG9uIDxhIGNsYXNzTmFtZT1cInRleHQtdmlvbGV0LTYwMCBmb250LWJvbGQgaG92ZXI6dW5kZXJsaW5lXCIgcmVsPVwibm9yZWZlcnJlclwiIGhyZWY9XCJodHRwczovL2dpdGh1Yi5jb20vSnVzdEZvc3NhXCI+R2l0SHViPC9hPiwgc28gSSBjYW4gbGVhcm4gZnJvbSBvdGhlcnMgYW5kIHNob3djYXNlIHdoYXQgSSBrbm93LiBJbiB0b3RhbCwgYWxsIG9mIG15IG9wZW4gc291cmNlZCBwcm9qZWN0cyBoYXZlIGVhcm5lZCBtZSA8c3BhbiBjbGFzc05hbWU9XCJmb250LWJvbGQgZGFyazp0ZXh0LXNsYXRlLTIwMFwiPntzdGF0cy5zdGFyc308L3NwYW4+IHN0YXJzIG9uIEdpdEh1YiwgYW5kIDxzcGFuIGNsYXNzTmFtZT1cImZvbnQtYm9sZCBkYXJrOnRleHQtc2xhdGUtMjAwXCI+e3N0YXRzLmZvcmtzfTwvc3Bhbj4gZm9ya3MuIEJlbG93IGFyZSBzb21lIG9mIG15IG1vc3QgcG9wdWxhciByZXBvc2l0b3JpZXMuXG4gICAgICAgICAgICAgICAgICAgIDwvcD5cbiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJ3LWZ1bGwgZ3JpZCBnYXAtMiBtZDpncmlkLXJvd3MtMSBtZDpncmlkLWNvbHMtMiBncmlkLWNvbHMtMSBtYi0xMlwiPlxuICAgICAgICAgICAgICAgICAgICAgICAge1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgIHJlcG9zLm1hcCgocmVwbzogUmVwbykgPT4gKFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8UmVwb0NhcmQga2V5PXtyZXBvLm5hbWV9IHJlcG89e3JlcG99IC8+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgKSlcbiAgICAgICAgICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgIDwvbW90aW9uLmRpdj5cbiAgICA8Lz5cbiAgKVxufVxuZXhwb3J0IGNvbnN0IGdldFN0YXRpY1Byb3BzID0gYXN5bmMgKCkgPT4ge1xuICBjb25zdCBzdGF0cyA9IGF3YWl0IGZldGNoKCdodHRwczovL2FwaS5naXRodWItc3Rhci1jb3VudGVyLndvcmtlcnMuZGV2L3VzZXIvanVzdGZvc3NhJykudGhlbihyZXMgPT4gcmVzLmpzb24oKSlcbiAgY29uc3QgcmVwb3MgPSBhd2FpdCBmZXRjaCgnaHR0cHM6Ly9hcGkuZ2l0aHViLmNvbS91c2Vycy9qdXN0Zm9zc2EvcmVwb3M/dHlwZT1vd25lciZwZXJfcGFnZT0xMDAnKS50aGVuKHJlcyA9PiByZXMuanNvbigpKVxuXG4gIGNvbnN0IHRvcFJlcG9zID0gcmVwb3Muc29ydCgoYTogUmVjb3JkPHN0cmluZywgYW55PiwgYjogUmVjb3JkPHN0cmluZywgYW55PikgPT4gYi5zdGFyZ2F6ZXJzX2NvdW50IC0gYS5zdGFyZ2F6ZXJzX2NvdW50KS5zbGljZSgwLCA0KTtcblxuICByZXR1cm4ge1xuICAgIHByb3BzOiB7XG4gICAgICBzdGF0czogc3RhdHMsXG4gICAgICByZXBvczogdG9wUmVwb3NcbiAgICB9XG4gIH1cblxufVxuXG5cbiJdLCJuYW1lcyI6WyJtb3Rpb24iLCJTaUdpdCIsIlNpVHlwZXNjcmlwdCIsIlNpSmF2YXNjcmlwdCIsIlNpUmVhY3QiLCJTaU5vZGVkb3RqcyIsIlNpVmlzdWFsc3R1ZGlvY29kZSIsIlNpVGFpbHdpbmRjc3MiLCJTaVlhcm4iLCJTaU5wbSIsIlNpTW9uZ29kYiIsIlNpVWJ1bnR1IiwiU2lBcmR1aW5vIiwiU2lFeHByZXNzIiwiU2lDaGFydGRvdGpzIiwiU2lOZXh0ZG90anMiLCJUZWNoSXRlbSIsIlJlcG9DYXJkIiwiSG9tZSIsInN0YXRzIiwicmVwb3MiLCJkaXYiLCJpbml0aWFsIiwib3BhY2l0eSIsInNjYWxlIiwiYW5pbWF0ZSIsImV4aXQiLCJ0cmFuc2l0aW9uIiwiZWFzZSIsImR1cmF0aW9uIiwiY2xhc3NOYW1lIiwiaDEiLCJwIiwiaSIsIkljb24iLCJ0aXRsZSIsImEiLCJyZWwiLCJocmVmIiwic3BhbiIsInN0YXJzIiwiZm9ya3MiLCJtYXAiLCJyZXBvIiwibmFtZSIsImdldFN0YXRpY1Byb3BzIiwiZmV0Y2giLCJ0aGVuIiwicmVzIiwianNvbiIsInRvcFJlcG9zIiwic29ydCIsImIiLCJzdGFyZ2F6ZXJzX2NvdW50Iiwic2xpY2UiLCJwcm9wcyJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/pages/index.tsx\n");
 
 /***/ }),
 
-/***/ 7700:
+/***/ "./node_modules/tippy.js/animations/perspective.css":
+/*!**********************************************************!*\
+  !*** ./node_modules/tippy.js/animations/perspective.css ***!
+  \**********************************************************/
 /***/ (() => {
 
 
 
 /***/ }),
 
-/***/ 8933:
+/***/ "./node_modules/tippy.js/dist/tippy.css":
+/*!**********************************************!*\
+  !*** ./node_modules/tippy.js/dist/tippy.css ***!
+  \**********************************************/
 /***/ (() => {
 
 
 
 /***/ }),
 
-/***/ 4787:
+/***/ "@tippyjs/react":
+/*!*********************************!*\
+  !*** external "@tippyjs/react" ***!
+  \*********************************/
 /***/ ((module) => {
 
 "use strict";
@@ -381,7 +76,10 @@ module.exports = require("@tippyjs/react");
 
 /***/ }),
 
-/***/ 9847:
+/***/ "react-icons/ai":
+/*!*********************************!*\
+  !*** external "react-icons/ai" ***!
+  \*********************************/
 /***/ ((module) => {
 
 "use strict";
@@ -389,7 +87,10 @@ module.exports = require("react-icons/ai");
 
 /***/ }),
 
-/***/ 6652:
+/***/ "react-icons/bi":
+/*!*********************************!*\
+  !*** external "react-icons/bi" ***!
+  \*********************************/
 /***/ ((module) => {
 
 "use strict";
@@ -397,7 +98,10 @@ module.exports = require("react-icons/bi");
 
 /***/ }),
 
-/***/ 764:
+/***/ "react-icons/si":
+/*!*********************************!*\
+  !*** external "react-icons/si" ***!
+  \*********************************/
 /***/ ((module) => {
 
 "use strict";
@@ -405,15 +109,21 @@ module.exports = require("react-icons/si");
 
 /***/ }),
 
-/***/ 997:
+/***/ "react/jsx-dev-runtime":
+/*!****************************************!*\
+  !*** external "react/jsx-dev-runtime" ***!
+  \****************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("react/jsx-runtime");
+module.exports = require("react/jsx-dev-runtime");
 
 /***/ }),
 
-/***/ 6197:
+/***/ "framer-motion":
+/*!********************************!*\
+  !*** external "framer-motion" ***!
+  \********************************/
 /***/ ((module) => {
 
 "use strict";
@@ -428,7 +138,7 @@ module.exports = import("framer-motion");;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__(5970));
+var __webpack_exports__ = (__webpack_exec__("./src/pages/index.tsx"));
 module.exports = __webpack_exports__;
 
 })();

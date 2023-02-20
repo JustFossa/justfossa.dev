@@ -41,7 +41,7 @@ const Contact = () => {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.95 }}
                 transition={{ ease: "easeOut", duration: 0.5 }}
-                className="flex flex-col items-center justify-start mt-24 overflow-hidden">
+                className="flex flex-col items-center justify-start w-full mt-24">
                 <div>
                     <h1 className="text-3xl dark:text-white font-bold mb-4 mt-16">Let&apos;s Chat 💬</h1>
                     <p className="text dark:text-gray-300 font-light tracking-wide">Have an inquiry, or want to connect? Feel free to leave a message below, or get in touch via Discord, Twitter, or email.</p>
@@ -49,7 +49,7 @@ const Contact = () => {
                 <h1 className="dark:text-gray-300/50 self-start text-sm mb-8 mt-4">It&apos;s currently <span className="dark:text-gray-300/60 font-bold">{time.time}</span> for me, so I&apos;m probably <span className="dark:text-gray-300/60 font-bold" >{time.msg}</span>. I&apos;ll get back to you soon</h1>
                 <div className="grid md:grid-cols-3 md:grid-rows-4 grid-cols-1 w-full gap-[15px]">
                     <ContactForm />
-                    <div className="w-full row-start-1 md:col-span-1 row-span-3 flex flex-col gap-[15px]">
+                    <div className="w-full row-start-1 md:col-span-1 row-span-3 flex flex-col gap-[15px] z-[20]">
                         <ContactItem name="JustFossa#8123" link="https://discord.com/users/1030767320127242290" borderColor="hover:border-[#5865f2]" icon={<SiDiscord color={"#5865f2"} size={30} />} />
                         <ContactItem name="@Just_Fossa" link="https://twitter.com/@Just_Fossa" borderColor="hover:border-[#1a8cd8]" icon={<SiTwitter color={"#1a8cd8"} size={30} />} />
                         <ContactItem name="hello@justfossa.dev" link="mailto:hello@justfossa.dev" borderColor="hover:border-[#838994]" icon={<IoMailOutline color={"#838994"} size={30} />} />
