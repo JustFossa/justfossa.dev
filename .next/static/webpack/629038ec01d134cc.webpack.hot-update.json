@@ -1,1 +1,0 @@
-{"c":["pages/contact","webpack"],"r":["pages/index"],"m":["./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?absolutePagePath=%2Fhome%2Fjustfossa%2Fcoding%2Fportfolio%2Fsrc%2Fpages%2Findex.tsx&page=%2F!","./node_modules/react-icons/bi/index.esm.js","./src/components/RepoCard.tsx","./src/components/TechItem.tsx","./src/pages/index.tsx"]}
