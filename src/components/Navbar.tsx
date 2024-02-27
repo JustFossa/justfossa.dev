@@ -225,7 +225,7 @@ export const Navbar = () => {
 				)}
 			</div>
 			{open && (
-				<div className="sm:flex hidden z-[20] fixed w-full h-full backdrop-blur-lg" />
+				<div className="sm:flex hidden z-[400] fixed w-full h-full backdrop-blur-lg" />
 			)}
 		</>
 	);
