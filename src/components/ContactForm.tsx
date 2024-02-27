@@ -41,7 +41,7 @@ export const ContactForm = () => {
                 <textarea value={message} onChange={(e) => setMessage(e.target.value)} rows={6} className="dark:bg-white/10 bg-gray-400/30 self-center w-[95%] p-2 dark:placeholder:text-gray-400/40 dark:text-gray-300 text-sm rounded-md" placeholder="Hi JustFossa, what's up?" />
                 <div className="flex flex-row items-center w-full mt-4">
                     <h1 className="dark:text-gray-400/80 px-4 text-sm w-52 md:w-auto">{error}</h1>
-                    <button disabled={sending} className="flex items-center text-md dark:bg-violet-700/60 hover:opacity-70  w-24 ml-auto mr-2 px-4 h-10 dark:border-none border-black border-[1px] dark:text-white rounded-full">Send {!sending ? <IoSend className="ml-auto" size={20} /> : <ImSpinner2 className="ml-auto animate-spin" />}</button>
+                    <button type="submit" disabled={sending} className="flex items-center text-md dark:bg-violet-700/60 hover:opacity-70  w-24 ml-auto mr-2 px-4 h-10 dark:border-none border-black border-[1px] dark:text-white rounded-full">Send {!sending ? <IoSend className="ml-auto" size={20} /> : <ImSpinner2 className="ml-auto animate-spin" />}</button>
                 </div>
             </form>
         </div>  
