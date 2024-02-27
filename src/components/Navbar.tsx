@@ -193,7 +193,7 @@ export const Navbar = () => {
 					/>
 				)}
 				{open && (
-					<div className="fixed grid-cols-2 grid z-[600] mt-[170px] w-full transition-all">
+					<div className="fixed grid-cols-2 grid z-[450] mt-[170px] w-full transition-all">
 						<MobileNavItem
 							title="Home"
 							isSelected={router.pathname == "/"}
