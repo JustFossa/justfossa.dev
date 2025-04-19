@@ -24,6 +24,8 @@ import { GetStaticProps } from "next";
 import { Navbar } from "@/components/Navbar";
 
 export default function Home({ stats, repos }: any) {
+	console.log(repos);
+
 	return (
 		<>
 			<motion.div
@@ -123,6 +125,7 @@ export const getStaticProps = async () => {
 	).then((res) => res.json());
 
 	const topRepos = repos
+		.filter((repo: Repo) => repo.id != 663495191)
 		.sort(
 			(a: Record<string, any>, b: Record<string, any>) =>
 				b.stargazers_count - a.stargazers_count
