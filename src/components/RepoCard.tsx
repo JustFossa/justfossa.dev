@@ -45,7 +45,7 @@ export const RepoCard = ({ repo }: { repo: Repo }) => {
                     <div className="flex items-center">
                             <motion.div
                                     className="w-3 h-3 rounded-full mr-2"
-                                    style={{ background: langs[repo.language ? repo.language : "unknown"].color, border: `solid 3px ${langs[repo.language ? repo.language : "unknown"].color}` }}
+                                    style={{ background: langs[repo.language ? repo.language : "unknown"]?.color || "#000000", border: `solid 3px ${langs[repo.language ? repo.language : "unknown"].color}` }}
                                 />
                             <h1 className="dark:text-gray-300">{repo.language || "Unknown"}</h1>
                     </div>
