@@ -91,12 +91,12 @@ const ThemeSwitcher = ({ handleTheme, theme }: any) => {
 			className="flex flex-row items-center justify-center cursor-pointer"
 		>
 			{theme ? (
+				<FiSun className="p-2 w-9 h-9 rounded-md font-bold dark:text-white hover:bg-slate-500/10 dark:hover:bg-[#c8c8dc]/5 " />
+			) : (
 				<FiMoon
 					size={20}
 					className="p-2 w-9 h-9 rounded-md font-bold dark:text-white hover:bg-slate-500/10 dark:hover:bg-[#c8c8dc]/5"
 				/>
-			) : (
-				<FiSun className="p-2 w-9 h-9 rounded-md font-bold dark:text-white hover:bg-slate-500/10 dark:hover:bg-[#c8c8dc]/5 " />
 			)}
 		</div>
 	);

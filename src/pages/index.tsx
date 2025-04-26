@@ -19,12 +19,37 @@ import {
 	SiNextdotjs,
 } from "react-icons/si";
 import { TechItem } from "@/components/TechItem";
-import { Repo, RepoCard } from "@/components/RepoCard";
 import { GetStaticProps } from "next";
 import { Navbar } from "@/components/Navbar";
+import ProjectCard from "@/components/ProjectCard";
 
 export default function Home({ stats, repos }: any) {
-	console.log(repos);
+	const projects = [
+		{
+			name: "SwiftNote",
+			repoUrl: "JustFossa/swiftnote",
+			cover: "/images/swiftnote.png",
+			tags: ["Next", "Typescript", "Express", "Postgres"],
+		},
+		{
+			name: "IP Tools",
+			repoUrl: "JustFossa/iptools",
+			cover: "/images/iptools.png",
+			tags: ["Next", "Typescript"],
+		},
+		{
+			name: "Coinhub",
+			repoUrl: "JustFossa/coinhub",
+			cover: "/images/coinhub.png",
+			tags: ["Next", "Typescript"],
+		},
+		{
+			name: "Sponsor",
+			repoUrl: "JustFossa/sponsor",
+			cover: "/images/sponsor.png",
+			tags: ["Next", "Typescript"],
+		},
+	];
 
 	return (
 		<>
@@ -107,9 +132,9 @@ export default function Home({ stats, repos }: any) {
 						forks. Below are some of my most popular repositories.
 					</p>
 					<div className="w-full grid gap-2 md:grid-rows-1 md:grid-cols-2 grid-cols-1 mb-12">
-						{repos.map((repo: Repo) => (
-							<RepoCard key={repo.name} repo={repo} />
-						))}
+						{projects.map((project, index) => {
+							return <ProjectCard {...project} key={index} />;
+						})}
 					</div>
 				</div>
 			</motion.div>
@@ -120,22 +145,10 @@ export const getStaticProps = async () => {
 	const stats = await fetch(
 		"https://api.github-star-counter.workers.dev/user/justfossa"
 	).then((res) => res.json());
-	const repos = await fetch(
-		"https://api.github.com/users/justfossa/repos?type=owner&per_page=100"
-	).then((res) => res.json());
-
-	const topRepos = repos
-		.filter((repo: Repo) => repo.id != 663495191)
-		.sort(
-			(a: Record<string, any>, b: Record<string, any>) =>
-				b.stargazers_count - a.stargazers_count
-		)
-		.slice(0, 4);
 
 	return {
 		props: {
 			stats: stats,
-			repos: topRepos,
 		},
 	};
 };
