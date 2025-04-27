@@ -29,25 +29,31 @@ export default function Home({ stats, repos }: any) {
 			name: "SwiftNote",
 			repoUrl: "JustFossa/swiftnote",
 			cover: "/images/swiftnote.png",
-			tags: ["Next", "Typescript", "Express", "Postgres"],
+			tags: ["Next.js", "Typescript", "Express.js", "Postgres"],
 		},
 		{
 			name: "IP Tools",
 			repoUrl: "JustFossa/iptools",
 			cover: "/images/iptools.png",
-			tags: ["Next", "Typescript"],
+			tags: ["Next.js", "Typescript"],
 		},
 		{
 			name: "Coinhub",
 			repoUrl: "JustFossa/coinhub",
 			cover: "/images/coinhub.png",
-			tags: ["Next", "Typescript"],
+			tags: ["Next.js", "Typescript"],
 		},
 		{
 			name: "Sponsor",
 			repoUrl: "JustFossa/sponsor",
 			cover: "/images/sponsor.png",
-			tags: ["Next", "Typescript"],
+			tags: ["Next.js", "Typescript"],
+		},
+		{
+			name: "Blog",
+			repoUrl: "JustFossa/blog",
+			cover: "/images/blog.png",
+			tags: ["Astro.js", "Typescript", "Tailwind"],
 		},
 	];
 
